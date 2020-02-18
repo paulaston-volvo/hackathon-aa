@@ -1,4 +1,4 @@
-#Android Automotive
+# Android Automotive
 
 ##Step 1 - Enable Automotive features in Android Studio
 
@@ -12,7 +12,7 @@ Follow the instructions in the link to enable automotive features:
 
 
 
-##Step 2 - Add emulator URL to Android Studio
+## Step 2 - Add emulator URL to Android Studio
 
 Open the Android SDK Manager and click the _SDK Update Sites_ tab.
 
@@ -24,7 +24,7 @@ _https://swf1.artifactory.cm.volvocars.biz/artifactory/artinfo-emulator/volvo/vo
 
 \&lt;!—IMAGE
 
-##Step 3 - Create an Android Virtual Device
+## Step 3 - Create an Android Virtual Device
 
 Open the AVD Manager. Click _+ Create Virtual Device_. Choose the _Automotive_ tab. If you don&#39;t see the Automotive tab, check Step 1.
 
@@ -42,7 +42,7 @@ Select a system image by choosing the _x86 Images_ tab. Choose the emulator vers
 
 Click Next and then Finish.
 
-##Step 4 - Run the sample app
+## Step 4 - Run the sample app
 
 Open the sample app in Android Studio. Choose the newly created AVD in the drop down e.g. Volvo CSD API 28. Click the play button.
 
@@ -70,7 +70,7 @@ The cluster tab shows how to display an Android Activity in the cluster window.
 
 \&lt;!—IMAGE
 
-##Next Steps
+## Next Steps
 
 Consult the commented source code for more information on car APIs.
 
