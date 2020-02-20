@@ -1,0 +1,24 @@
+# Setup linux
+https://source.android.com/setup/build/initializing#installing-required-packages-ubuntu-1404
+https://source.android.com/setup/build/downloading
+
+# Get source code
+repo init -u https://icup_android.gerrit.cm.volvocars.biz/a/manifest.git -b dev/analytics_poc
+repo sync -j6 --no-clone-bundle -q -c -d
+
+# Import full aosp source into IDE
+https://wiki.lineageos.org/import-android-studio-howto.html
+
+# Compile emulator
+source build/envsetup.sh
+lunch ihu_emulator_volvo_car-userdebug
+make installclean && make ihu_emulator_package
+
+# Import emulator into Android Studio
+/home/tpratt/thesource/out/target/product/ihu_emulator/emulator_package/ihu_emulator_volvo_car.xml
+https://c1.confluence.cm.volvocars.biz/display/IHUA/Android+Studio+Integration
+
+# Go into docker and run the carsim
+./vendor/volvocars/tools/docker_build/run.sh
+carsim climate
+
